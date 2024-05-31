@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+body{
+    background-color: #F0F0F0;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 40px;
+    margin: 20px 20px 20px 30px;
+    font-family: "Bakbak One", sans-serif;
+    background: -webkit-linear-gradient(#E7473C, #FF9B71);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    margin: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 20px 20px 20px 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.search-box{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #F0F0F0;
+    border-radius: 30px;
+
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.search-box:hover{
+    width: 400px;
+}
+
+.search-box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: normal;
+    transition: 0 0.8;
+    background: transparent;
+}
+
+.search-box .fa{
+    color: black;
+    font-size: 12px;
+}
+
+nav a:hover{
+    color: #E7473C;
+}
+
+.separator{
+    background-color: #E7473C;
+    max-width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.separator h1{
+    font-family: "Bakbak One", sans-serif;
+    text-align: center;
+    background-color: transparent;
+    color: #F0F0F0;
+}
+
+.corrupt-list-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.corruptor-items{
+    max-width: 400px;
+    min-height: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+
+}
+
+.corruptor-items img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.corruptor-items img:hover{
+    width: 220px;
+    height: 220px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.corruptor-items p{
+    font-family: "Bakbak One", sans-serif;
+    text-align: center;
+    background-color: transparent;
+    margin: 0 ;
+}
+
+.corruptor-item-head{
+    font-size: 40px;
+    color: #E7473C;
+}
+
+.corruptor-item-detail{
+    font-size: 24px;
+    color: #FF9B71;
+}
