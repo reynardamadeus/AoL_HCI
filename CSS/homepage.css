@@ -101,6 +101,7 @@ nav a:hover{
 #corrupt-cases{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .corrupt-content{
@@ -138,11 +139,12 @@ nav a:hover{
     gap: 40px;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .corruptor-items{
-    max-width: 400px;
-    min-height: 400px;
+    min-width: 400px;
+    max-height: 400px;
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px;
@@ -344,7 +346,7 @@ nav a:hover{
 
 #footer{
     background-color: #E7473C;
-    max-width: 100%;
+    min-width: 100%;
     min-height: 300px;
     display: flex;
     justify-content: space-between;
@@ -386,4 +388,75 @@ nav a:hover{
     gap: 30px;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    #corrupt-cases{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-cases{
+        margin: 20px;
+    }
+    .corrupt-list-section{
+        gap: 30px;
+        min-width: 100%;
+    }
+
+    .corruptor-items{
+        min-width: 100px;
+    }
+
+    .corruptor-items img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .corruptor-item-head{
+        font-size: 18px;
+    }
+
+    .corruptor-item-detail{
+        font-size: 12px;
+    }
+
+    .top-cases-content{
+        max-width: 250px;
+        padding: 5px;
+    }
+
+    .top-cases-content p{
+        margin: 5px;
+    }
+    .top-cases-img{
+         min-width: 200px;
+         height: 100px;     
+    }
+    .top-head{
+        font-size: 12px;
+    }
+    .top-detail{
+        font-size: 8px;
+    }
+    .top-content{
+        font-size: 9px;
+    }
+
+    .top-head-rest{
+        font-size: 10px;
+    }
+
+    .top-detail-rest{
+        font-size: 8px;
+    }
+
+    .top-cases-content-rest{
+        max-width: 170px;
+        min-height: 8px;
+    }
+    .top-cases-img-rest{
+        max-width: 170px;
+        min-height: 80px;
+    }
+
 }
