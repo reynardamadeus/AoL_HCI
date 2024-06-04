@@ -24,51 +24,68 @@ body{
     flex-direction: column;
 }
 nav{
-    margin: 20px;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px;
+    background: transparent;
+    height: 60px; 
 }
 
 nav a{
     text-decoration: none;
     color: black;
-    margin: 20px 20px 20px 10px;
+    margin: 20px 20px 20px 40px;
     font-weight: bold;
     font-size: 20px;
 }
 
 .search-box{
+    width: 40px;
     height: 30px;
     display: flex;
     cursor: pointer;
+    justify-content: center;
     padding: 10px 20px;
     background-color: #F0F0F0;
     border-radius: 30px;
 
     align-items: center;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: width 0.4s;
+    box-shadow: 0 10px 25px rgba(151, 150, 150, 0.3);
 }
 
 .search-box:hover{
-    width: 1860px;
     background-color: aliceblue;
+    width: 300px;
 }
 
 .search-box input{
     font-size: 16px;
     font-family: 'Bahnschrift', sans-serif;
     color: black;
-    margin-right: var(--padding);
-    width: 1860px;
+    margin-left: 10px;
+    width: 0;
     outline: none;
     border: none;
     font-weight: normal;
-    transition: 0 0.8;
+    transition: width 0.4s;
     background: transparent;
+    opacity: 0;
 }
 
-.search-box .fa{
-    color: black;
-    font-size: 12px;
+.search-box:hover input{
+    width: 240px;
+    opacity: 1;
 }
+
+.search-box .material-symbols-outlined{
+    align-items: center;
+    box-sizing: border-box;
+    color: black;
+}
+
 
 nav a:hover{
     color: #E7473C;
