@@ -138,3 +138,41 @@ nav a:hover{
     font-size: 24px;
     color: #FF9B71;
 }
+
+#footer{
+    background-color: #E7473C;
+    min-width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-left{
+    margin-left: 40px;
+}
+
+.footer-right{
+    margin-right: 40px;
+    gap: 30px;
+}
+
+.footer-left p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #F0F0F0;
+}
+
+.footer-right p{
+    font-size: 20px;
+
+    color: #F0F0F0;
+    text-align: center;
+}
+
+.social-media{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}

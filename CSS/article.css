@@ -200,19 +200,10 @@ span{
     color: #F0F0F0;
 }
 
-#footer input{
-    width: 400px;
-    height: 52px;
-    border-radius: 40px;
-    background-color: #F0F0F0;
-    margin-bottom: 40px;
-    border: none;
-    text-align: center;
+.footer-right p{
     font-size: 20px;
-    margin: 20px;
-}
 
-#footer input::placeholder{
+    color: #F0F0F0;
     text-align: center;
 }
 
@@ -221,4 +212,8 @@ span{
     gap: 30px;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
+
+
+
