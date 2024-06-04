@@ -16,10 +16,10 @@
         <hr>
         <nav>
             <a href="homepage.html">BERANDA</a>
-            <a href="">TRENDING</a>
-            <a href="MostRecent.html">MOST RECENT</a>
-            <a href="corruptorList.html">KORUPTOR</a>
-            <a href="">KONTAK</a>
+            <a href="#corrupt-list-section">KORUPTOR</a>
+            <a href="#corrupt-cases">TOP CASES</a>
+            <a href="#top-cases-section">TRENDING</a>
+            <a href="#recent-section">MOST RECENT</a>
             <div class="search-box">
             
                 <span class="material-symbols-outlined">
@@ -37,9 +37,8 @@
     <div class="separator" >
         <h1>Corrupt Officials List</h1>
     </div>
-
-   <div class="corrupt-list-section">
-        <div class="corruptor-items">
+   <section class="corrupt-list-section" id="corrupt-list-section">
+        <div class="corruptor-items" >
             <img src="assets/ParaKoruptor/Ahmad_Muhdlor_Ali.jpg" alt="">
             <p class="corruptor-item-head" >Ahmad Muhdlor Ali</p>
             <p class="corruptor-item-detail">Total Korupsi: 2,7 Milliar</p>
@@ -70,8 +69,8 @@
             <p class="corruptor-item-detail">Total Korupsi: 14,5 Milliar</p>
         </div>
     
-        <button type="button" class="button-see-more">Lihat Selengkapnya <img src="assets/icons/arrow.png" alt=""></button>
-   </div>
+        <button type="button" class="button-see-more" onclick="window.location.href = 'corruptorList.html'">Lihat Selengkapnya <img src="assets/icons/arrow.png" alt=""></button>
+   </section>
 
    <div class="separator" >
         <h1>Top Cases</h1>
@@ -117,18 +116,8 @@
          <h1>Top News</h1>
     </div>
 
-    <section class="top-cases-section">
-        <div class="top-cases">
-            <img src="assets/top-cases.png" alt="" class="top-cases-img">
-            
-            <div class="top-cases-content">
-                <p class="top-head">Andhi Pranomo Dijatuhi Vonis 10 Tahun Penjara</p>
-                <p class="top-detail">Senin, 1 April 2024 | 12:52 WIB</p>
-                <p class="top-content">Mantan Kepala Bea Cukai Makassar, Andhi Pranomo dijatuhi hukuman 10 Tahun 
-                    Penjara setelah terbukti menerima gratifikasi sebesar 58,9 Milliar</p>
-            </div>
-        </div>
-        <div class="top-cases">
+    <section class="top-cases-section" id="top-cases-section">
+        <div class="top-cases" onclick="window.location.href = 'article.html'">
             <img src="assets/top-cases.png" alt="" class="top-cases-img">
             <div class="top-cases-content">
                 <p class="top-head">Andhi Pranomo Dijatuhi Vonis 10 Tahun Penjara</p>
@@ -137,26 +126,35 @@
                     Penjara setelah terbukti menerima gratifikasi sebesar 58,9 Milliar</p>
             </div>
         </div>
-        <div class="top-cases">
-            <img src="assets/top-cases.png" alt="" class="top-cases-img-rest">
-            <div class="top-cases-content-rest">
-                <p class="top-head-rest">Andhi Pranomo Dijatuhi Vonis 10 Tahun Penjara</p>
-                <p class="top-detail-rest">Senin, 1 April 2024 | 12:52 WIB</p>
+        <div class="top-cases" onclick="window.location.href = 'article.html'">
+            <img src="assets/topNews/top-news1.png" alt="" class="top-cases-img">
+            <div class="top-cases-content">
+                <p class="top-head">Terjerat Dugaan Korupsi Timah, Harvey Moeis Jadi Tersangka</p>
+                <p class="top-detail">Sabtu, 30 Maret 2024 | 16.00 WIB</p>
+                <p class="top-content">Harvey Moeis, suami seorang artis bernama Sandra Dewi ditahan oleh KPK karena turut andil 
+                    dalam kasus korupsi timah yang berpotensi merugikan negara 271 Trilliun.</p>
             </div>
         </div>
-        <div class="top-cases">
-            <img src="assets/top-cases.png" alt="" class="top-cases-img-rest">
+        <div class="top-cases" onclick="window.location.href = 'article.html'">
+            <img src="assets/topNews/rat.png" alt="" class="top-cases-img-rest">
             <div class="top-cases-content-rest">
-                <p class="top-head-rest">Andhi Pranomo Dijatuhi Vonis 10 Tahun Penjara</p>
-                <p class="top-detail-rest">Senin, 1 April 2024 | 12:52 WIB</p>
+                <p class="top-head-rest">Daftar 10 Koruptor yang mendapatkan Potongan Hukuman</p>
+                <p class="top-detail-rest">Minggu, 31 Maret 2024 | 10.00 WIB</p>
+            </div>
+        </div>
+        <div class="top-cases" onclick="window.location.href = 'article.html'">
+            <img src="assets/topNews/top-news2.png" alt="" class="top-cases-img-rest">
+            <div class="top-cases-content-rest">
+                <p class="top-head-rest">Dugaan Kehadiran Mafia Besar dalam Kasus Korupsi Timah</p>
+                <p class="top-detail-rest">Minggu, 31 Maret 2024 | 19.00 WIB</p>
             </div>
         </div>
 
-        <div class="top-cases">
-            <img src="assets/top-cases.png" alt="" class="top-cases-img-rest">
+        <div class="top-cases" onclick="window.location.href = 'article.html'">
+            <img src="assets/topNews/top-news3.png" alt="" class="top-cases-img-rest">
             <div class="top-cases-content-rest">
-                <p class="top-head-rest">Andhi Pranomo Dijatuhi Vonis 10 Tahun Penjara</p>
-                <p class="top-detail-rest">Senin, 1 April 2024 | 12:52 WIB</p>
+                <p class="top-head-rest">KPK kembali tetapkan Bupati Kepulauan Meranti Jadi Tersangka TPPU</p>
+                <p class="top-detail-rest">Sabtu, 30 Maret 2024 | 13.03 WIB</p>
             </div>
         </div>
     </section>
@@ -165,7 +163,7 @@
    <section id="recent-section">
     <h1>Most Recent</h1>
     <hr>
-    <div class="recent">
+    <div class="recent" onclick="window.location.href = 'article.html'">
         <img src="assets/top-cases.png" alt="">
         <div class="recent-content">
             <p class="recent-title">Hasil Korupsi Timah Mengalir ke Parpol? Berikut Respon Kejagung!</p>
@@ -173,7 +171,7 @@
         </div>
     </div>
     <hr>
-    <div class="recent">
+    <div class="recent" onclick="window.location.href = 'article.html'">
         <img src="assets/top-cases.png" alt="">
         <div class="recent-content">
             <p class="recent-title">Hasil Korupsi Timah Mengalir ke Parpol? Berikut Respon Kejagung!</p>
@@ -181,7 +179,7 @@
         </div>
     </div>
     <hr>
-    <div class="recent">
+    <div class="recent" onclick="window.location.href = 'article.html'">
         <img src="assets/top-cases.png" alt="">
         <div class="recent-content">
             <p class="recent-title">Hasil Korupsi Timah Mengalir ke Parpol? Berikut Respon Kejagung!</p>
@@ -189,7 +187,7 @@
         </div>
     </div>
     <hr>
-    <div class="recent">
+    <div class="recent" onclick="window.location.href = 'article.html'">
         <img src="assets/top-cases.png" alt="">
         <div class="recent-content">
             <p class="recent-title">Hasil Korupsi Timah Mengalir ke Parpol? Berikut Respon Kejagung!</p>
@@ -197,7 +195,7 @@
         </div>
     </div>
     <hr>
-    <div class="recent">
+    <div class="recent" onclick="window.location.href = 'article.html'">
         <img src="assets/top-cases.png" alt="">
         <div class="recent-content">
             <p class="recent-title">Hasil Korupsi Timah Mengalir ke Parpol? Berikut Respon Kejagung!</p>
@@ -205,7 +203,7 @@
         </div>
     </div>
     <hr>
-    <button type="button" class="button-see-more">Lihat Selengkapnya <img src="assets/icons/arrow.png" alt=""></button>
+    <button class="button-see-more" onclick="window.location.href = 'MostRecent.html'">Lihat Selengkapnya <img src="assets/icons/arrow.png" alt=""></button>
    </section>
     
    <section id="footer">
@@ -214,7 +212,7 @@
         <img src="assets/icons/Binus.svg" alt="">
     </div>
     <div class="footer-right">
-        <input type="text" placeholder="Masukkan Email Anda">
+        <p>Our Social Media</p>
         <div class="social-media">
             <img src="assets/icons/instagram.svg" alt="">
             <img src="assets/icons/facebook.svg" alt="">
@@ -224,13 +222,6 @@
     </div>
    </section>
 
-
-   <script>
-    document.getElementById('link')
-              .addEventListener('click', function () {
-                window.location.href = 'article.html';
-        });
-   </script>
     
 </body>
 </html>
