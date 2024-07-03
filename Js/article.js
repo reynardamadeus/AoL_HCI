@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updateCarousel() {
         const offset = -currentIndex * (100 / carouselItems.length);
-        carouselInner.style.transform = `translateX(${offset}%)`;
+        carouselInner.style.transform = `translateX(${3*offset}%)`;
     }
 
     prevButton.addEventListener('click', function() {
