@@ -15,7 +15,7 @@ body{
 
 .title{
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 20px 20px 20px 30px;
     font-family: "Bakbak One", sans-serif;
     background: -webkit-linear-gradient(#E7473C, #FF9B71);
@@ -32,6 +32,7 @@ nav{
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    width: 100%;
     padding: 0 20px;
     background: transparent;
     height: 60px; 
@@ -42,7 +43,7 @@ nav a{
     color: black;
     margin: 20px 20px 20px 40px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .search-box{
@@ -96,7 +97,6 @@ nav a:hover{
 
 .hero img{
     max-width: 100%;
-    height: 800px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -105,7 +105,7 @@ nav a:hover{
 .separator{
     background-color: #E7473C;
     max-width: 100%;
-    padding: 20px;
+    padding: 1.25em;
     overflow: hidden;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -116,33 +116,49 @@ nav a:hover{
     text-align: center;
     background-color: transparent;
     color: #F0F0F0;
+    font-size: 2rem;
+}
+
+.page-link, .page-link:visited{
+    text-decoration: none;
 }
 
 #corrupt-cases{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     overflow: hidden;
+    padding: 40px;
+    
 }
 
 .corrupt-content{
     display: flex;
-    align-items: baseline;
-    margin: 40px;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .case{
     display: flex;
     flex-direction: column;
-    
+    width: 80%;
+    flex: 1;
 }
 
 .case-title{
     font-family: "Bakbak One", sans-serif;
-    font-size: 28px;
+    font-size: 1.5rem;
+}
+
+.case-inner{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .case-detail{
-    font-size: 24px;
+    font-size: 1.25rem;
     color: #E7473C;
 }
 
@@ -150,7 +166,7 @@ nav a:hover{
     border-radius: 50%;
     width: 70px;
     height: 70px;
-    font-size: 18px;
+    font-size: 1.25rem;
     border: 5px solid #E7473C;
     color: #E7473C;
     display: flex;
@@ -161,7 +177,7 @@ nav a:hover{
 
 .baca-selengkapnya{
     color: #FF9B71;
-    font-size: 24px;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 .corrupt-list-section{
@@ -171,6 +187,7 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    flex: 1;
 }
 
 .corruptor-items{
@@ -215,16 +232,19 @@ nav a:hover{
     color: #FF9B71;
 }
 .button-see-more{
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #F0F0F0;
     background-color: #FF9B71;
     border: 0;
     border-radius: 10px;
     padding: 20px;
-    min-width: 80%;
+    width: 80%;
     cursor: pointer;
     margin-left: 100px;
     margin-top: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%);
 }
 
 .button-see-more img{
@@ -247,22 +267,24 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: 40px;
+    margin: 20px;
     background-color: #E7473C;
     border: 0;
+    max-width: 450px;
     border-radius: 10px;
     cursor: pointer;
 }
 
 
 .top-cases-img{
-    max-width: 500px;
-    max-height: 300px;
+    max-width: 100%;
+    height: 300px;
+    overflow-y: scroll;
 }
 
 .top-cases-content{
     padding: 10px;
-    max-width: 500px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     height: 175px;
@@ -272,15 +294,14 @@ nav a:hover{
     background-color: transparent;
     color: #F0F0F0;
     margin: 10px;
-    min-width: fit-content;
 
 }
 .top-head{
     font-family: "Bakbak One", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .top-detail{
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .top-content{
@@ -291,13 +312,23 @@ nav a:hover{
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 
+.top-cases-rest{
+    max-width: 200px;
+}
+
+.top-cases-rest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
 
 
 .top-cases-content-rest{
     background-color: #E7473C;
     border: 0;
     border-radius: 10px;
-    max-width: 300px;
+    width: 200px;
     padding: 10px;
     cursor: pointer;
 }
@@ -309,17 +340,17 @@ nav a:hover{
 }
 
 .top-cases-img-rest{
-    max-width: 300px;
-    min-height: 200px;
+    width: 100%;
+    height: 200px;
 }
 
 .top-head-rest{
     font-family: "Bakbak One", sans-serif;
-    font-size: 14px;
+    font-size: 0.75rem;
 }
 
 .top-detail-rest{
-    font-size: 12px; 
+    font-size: 0.625rem; 
 }
 
 #recent-section{
@@ -338,8 +369,8 @@ nav a:hover{
     background-color: rgba(0,0,0,0.1);
 }
 .recent img{
-    max-width: 200px;
-    min-height: 160px;
+    width: 30%;
+    min-height: 30%;
 }
 .recent-content{
     display: flex;
@@ -349,12 +380,12 @@ nav a:hover{
 
 .recent-title{
     font-family: "Bakbak One", sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .recent-detail{
     color: #E7473C;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 
@@ -372,8 +403,8 @@ nav a:hover{
 
 #footer{
     background-color: #E7473C;
-    min-width: 100%;
-    min-height: 300px;
+    max-width: 100%;
+    padding: 80px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -446,7 +477,10 @@ nav a:hover{
     color: #F0F0F0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) and (min-height: 426px) {
+    nav a{
+        font-size: 0.75rem;
+    }
     #corrupt-cases{
         display: flex;
         flex-direction: column;
@@ -460,20 +494,19 @@ nav a:hover{
     }
 
     .corruptor-items{
-        min-width: 100px;
+        
     }
 
     .corruptor-items img{
-        width: 100px;
-        height: 100px;
+    
     }
 
     .corruptor-item-head{
-        font-size: 18px;
+        font-size: 1.25rem;
     }
 
     .corruptor-item-detail{
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     .top-cases-content{
@@ -485,8 +518,8 @@ nav a:hover{
         margin: 5px;
     }
     .top-cases-img{
-         min-width: 200px;
-         height: 100px;     
+        min-width: 200px;
+        height: 100px;     
     }
     .top-head{
         font-size: 12px;
@@ -514,5 +547,68 @@ nav a:hover{
         max-width: 170px;
         min-height: 80px;
     }
+    .recent-title{
+        font-size: 1rem;
+    }
+    .recent-detail{
+        font-size: 0.75rem;
+    }
 
+    .separator h1{
+        font-size: 1.75rem;
+    }
+
+    .title{
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width: 426px) {
+    .separator h1{
+        font-size: 1rem;
+    }
+    .separator{
+        padding: 0.5rem;
+    }
+    .corrupt-rank{
+        width: 40px;
+        height: 40px;
+        font-size: 0.75rem;
+        border: 2px solid #E7473C;
+    }
+    #corrupt-cases{
+        padding: 20px;
+    }
+    .corrupt-content{gap: 20px;    }
+    .case-title{
+        font-size: 1rem;
+    }
+
+    .case-detail{
+        font-size: 0.625rem;
+    }
+
+    .baca-selengkapnya{
+        font-size: 0.625rem;
+    }
+    nav a{
+        font-size: 0.5rem;
+        margin: 5px 5px 5px 15px;
+    }
+    .recent-title{
+        font-size: 0.625rem;
+    }
+    .recent-detail{
+        font-size: 0.5rem;
+    }
+    #recent-section{
+        margin: 2rem;
+    }
+    #recent-section hr{
+        border: 1px solid black;
+    }
+
+    
+    
 }

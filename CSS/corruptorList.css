@@ -194,3 +194,8 @@ nav a:hover{
     align-items: center;
     margin-top: 40px;
 }
+@media (max-width: 769px) and (min-height: 426px) {
+    nav a{
+        font-size: 0.75rem;
+    }
+}
