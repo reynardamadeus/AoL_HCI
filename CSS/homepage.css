@@ -11,6 +11,7 @@ html{
 
 body{
     background-color: #F0F0F0;
+    width: 100%;
 }
 
 .title{
@@ -135,8 +136,12 @@ nav a:hover{
 
 .corrupt-content{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     flex-wrap: wrap;
     gap: 40px;
+    cursor: pointer;
 }
 
 .case{
@@ -155,10 +160,10 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    font-size: 1.25rem;
 }
 
 .case-detail{
-    font-size: 1.25rem;
     color: #E7473C;
 }
 
@@ -177,13 +182,12 @@ nav a:hover{
 
 .baca-selengkapnya{
     color: #FF9B71;
-    font-size: 1.25rem;
     font-weight: bold;
 }
 .corrupt-list-section{
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 80px;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -193,8 +197,6 @@ nav a:hover{
 .corruptor-items{
     max-width: 400px;
     max-height: 300px;
-    margin-left: 20px;
-    margin-right: 20px;
     padding: 10px;
 
 }
@@ -203,14 +205,10 @@ nav a:hover{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .corruptor-items img:hover{
-    width: 220px;
-    height: 220px;
+    transform: scale(1.1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     transition: 0.3s ease-in-out;
     border: 0;
@@ -223,13 +221,21 @@ nav a:hover{
     margin: 0 ;
 }
 .corruptor-item-head{
-    font-size: 30px;
+    font-size: 1.75rem;
     color: #E7473C;
 }
 
 .corruptor-item-detail{
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #FF9B71;
+}
+
+.button-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
 }
 .button-see-more{
     font-size: 1.25rem;
@@ -238,13 +244,8 @@ nav a:hover{
     border: 0;
     border-radius: 10px;
     padding: 20px;
-    width: 80%;
+    width: 70%;
     cursor: pointer;
-    margin-left: 100px;
-    margin-top: 60px;
-    top: 50%;
-    left: 50%;
-    transform: translate(0, -50%);
 }
 
 .button-see-more img{
@@ -266,7 +267,7 @@ nav a:hover{
 .top-cases{
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    overflow-y: scroll;
     margin: 20px;
     background-color: #E7473C;
     border: 0;
@@ -278,8 +279,6 @@ nav a:hover{
 
 .top-cases-img{
     max-width: 100%;
-    height: 300px;
-    overflow-y: scroll;
 }
 
 .top-cases-content{
@@ -308,49 +307,25 @@ nav a:hover{
     font-size: 13px;
 }
 
-.top-cases:hover{
+.top-cases:hover, .top-cases-rest:hover{
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .top-cases-rest{
-    max-width: 200px;
-}
-
-.top-cases-rest{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-
-
-.top-cases-content-rest{
+    flex-direction: column;
+    margin: 20px;
     background-color: #E7473C;
     border: 0;
+    max-width: 300px;
     border-radius: 10px;
-    width: 200px;
-    padding: 10px;
     cursor: pointer;
 }
-
-.top-cases-content-rest p{
-    background-color: transparent;
-    color: #F0F0F0;
-    margin: 5px;
+.top-cases-rest .top-cases-content{
+    height: 125px;
 }
-
-.top-cases-img-rest{
-    width: 100%;
-    height: 200px;
-}
-
-.top-head-rest{
-    font-family: "Bakbak One", sans-serif;
-    font-size: 0.75rem;
-}
-
-.top-detail-rest{
-    font-size: 0.625rem; 
+.top-cases-rest .top-head{
+    font-size: 0.875rem;
 }
 
 #recent-section{
@@ -361,7 +336,7 @@ nav a:hover{
     display: flex;
     gap: 20px;
     padding: 20px;
-    margin-left: 40px;
+    
     cursor: pointer;
 }
 
@@ -376,29 +351,28 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 5px;
 }
 
 .recent-title{
     font-family: "Bakbak One", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .recent-detail{
     color: #E7473C;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 
 #recent-section h1{
     font-family: "Bakbak One", sans-serif;
-    margin-left: 40px;
     margin-bottom: 20px;
     color: #E7473C;
 }
 
 #recent-section hr{
     border: 2px solid black;
-    margin-left: 40px;
 }
 
 #footer{
@@ -490,15 +464,21 @@ nav a:hover{
     }
     .corrupt-list-section{
         gap: 30px;
-        min-width: 100%;
     }
 
     .corruptor-items{
-        
-    }
-
-    .corruptor-items img{
+        width: 300px;
+        padding: 10px;
     
+    }
+    
+    .corruptor-items img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .corruptor-item-head{
@@ -506,47 +486,56 @@ nav a:hover{
     }
 
     .corruptor-item-detail{
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 
-    .top-cases-content{
-        max-width: 250px;
-        padding: 5px;
+
+    .top-cases{
+        max-width: 300px;
     }
 
     .top-cases-content p{
         margin: 5px;
     }
-    .top-cases-img{
-        min-width: 200px;
-        height: 100px;     
+
+    .case-title{
+        font-size: 1.25rem;
     }
+    .case-inner{
+        font-size: 1rem;
+    }
+
+    .corrupt-rank{
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+        border: 3.5px solid #E7473C;
+    }
+
+    .top-cases-content{
+        height: 130px;
+    }
+    .top-cases-rest{
+        max-width: 200px;
+    }
+
     .top-head{
-        font-size: 12px;
+        font-size: 0.875rem;
     }
     .top-detail{
-        font-size: 8px;
+        font-size: 0.625rem;
     }
     .top-content{
-        font-size: 9px;
+        font-size: 0.650rem;
+    }
+    .top-cases-rest .top-cases-content{
+        height: 100px;
+    }
+    .top-cases-rest .top-head{
+        font-size: 0.75rem;
     }
 
-    .top-head-rest{
-        font-size: 10px;
-    }
 
-    .top-detail-rest{
-        font-size: 8px;
-    }
-
-    .top-cases-content-rest{
-        max-width: 170px;
-        min-height: 8px;
-    }
-    .top-cases-img-rest{
-        max-width: 170px;
-        min-height: 80px;
-    }
     .recent-title{
         font-size: 1rem;
     }
@@ -581,13 +570,76 @@ nav a:hover{
         padding: 20px;
     }
     .corrupt-content{gap: 20px;    }
+
     .case-title{
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 
-    .case-detail{
+    .case-inner{
+        font-size: 0.5rem;
+    }
+
+    .corrupt-rank{
+        width: 35px;
+        height: 35px;
+        font-size: 0.5rem;
+        border: 2px solid #E7473C;
+    }
+
+    .corruptor-items{
+        width: 150px;
+    }
+    .button-see-more{
+        font-size: 0.75rem;
+        
+    }
+    
+    .corruptor-items img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .corruptor-item-head{
+        font-size: 0.875rem;
+    }
+
+    .corruptor-item-detail{
         font-size: 0.625rem;
     }
+    
+    .top-cases{
+        max-width: 150px;
+    }
+
+    .top-cases-content p{
+        margin: 5px;
+    }
+
+    .top-cases-content{
+        height: 130px;
+    }
+
+    .top-cases-rest{
+        max-width: 100px;
+    }
+
+    .top-head{
+        font-size: 0.625rem;
+    }
+    .top-detail{
+        font-size: 0.375rem;
+    }
+    .top-content{
+        font-size: 0.425rem;
+    }
+    .top-cases-rest .top-cases-content{
+        height: 70px;
+        padding: 3px;
+    }
+    .top-cases-rest .top-head{
+        font-size: 0.375rem;
+    }
+
 
     .baca-selengkapnya{
         font-size: 0.625rem;
@@ -602,13 +654,53 @@ nav a:hover{
     .recent-detail{
         font-size: 0.5rem;
     }
-    #recent-section{
-        margin: 2rem;
-    }
     #recent-section hr{
         border: 1px solid black;
     }
 
+    #footer{
+        padding: 40px 0;
+    }
     
+    .footer-left{
+        margin-left: 40px;
+    }
+    
+    .footer-right{
+        margin-right: 40px;
+        gap: 10px;
+    }
+    
+    .footer-left p{
+        font-size: 1rem;
+        margin-bottom: 10px;
+        color: #F0F0F0;
+    }
+
+    .footer-left img{
+        width: 150px;
+        height: 50px;
+    }
+    
+    .footer-right p{
+        font-size: 1rem;
+    
+        color: #F0F0F0;
+        text-align: center;
+    }
+    
+    .social-media{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .social-media img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
     
 }
